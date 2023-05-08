@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Detalles del Personaje</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <style>
+    body {
+      font-family: "Roboto", sans-serif;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+
+    h1 {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .character-container {
+      display: flex;
+      align-items: flex-start;
+      background-color: #ffffff;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+
+    .character-image {
+      width: 300px;
+      height: 300px;
+      border-radius: 10%;
+      margin-right: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      flex-shrink: 0;
+    }
+
+    .character-info {
+      flex: 1;
+    }
+
+    .info-row {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    .info-label {
+      font-weight: bold;
+      margin-right: 10px;
+      color: #555;
+      width: 100px;
+    }
+
+    .info-value {
+      color: #333;
+    }
+
+    .info-value ul {
+      margin: 0;
+      padding-left: 20px;
+      list-style-type: disc;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Unica sección donde se muestra la información del personaje -->
+  <div class="character-container">
+    <img class="character-image" id="character-image" src="" alt="Character Image">
+    <div class="character-info">
+      <h1 id="character-name"></h1>
+      <div class="info-row">
+        <span class="info-label">Status:</span>
+        <span class="info-value" id="character-status"></span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Species:</span>
+        <span class="info-value" id="character-species"></span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Gender:</span>
+        <span class="info-value" id="character-gender"></span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Origin:</span>
+        <span class="info-value" id="character-origin"></span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Location:</span>
+        <span class="info-value" id="character-location"></span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Episodes:</span>
+        <ul class="info-value" id="character-episodes"></ul>
+      </div>
+    </div>
+  </div>
+  <script src="js/code2.js"></script>
+</body>
